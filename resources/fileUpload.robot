@@ -13,9 +13,9 @@ UploadFile
     IF                          "${TEST_NAME}" == "Live Testing Session"
         QVision.ClickText       suite
     ELSE
-        QVision.ClickText       execution
+        QVision.DoubleClick       execution
         Sleep                   2s
-        QVision.ClickText       pdf_upload                  anchor=output
+        QVision.DoubleClick       pdf_upload                  anchor=output
     END
 
     QVision.DoubleClick         files                       anchor=resources
