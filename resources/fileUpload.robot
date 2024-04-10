@@ -6,7 +6,7 @@ Library                         String
 *** Keywords ***
 UploadFile
     [Documentation]
-    [Arguments]                 ${upload_button_text}       ${directory}    ${pdf_file_name}
+    [Arguments]                 ${upload_button_text}       ${pdf_file_name}
     Set Library Search Order    QForce                      QVision
     QForce.ClickText            ${upload_button_text}
 
