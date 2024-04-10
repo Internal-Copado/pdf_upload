@@ -14,7 +14,6 @@ UploadFile
         QVision.ClickText       suite
     ELSE
         QVision.DoubleClick       execution
-        Sleep                   2s
         QVision.DoubleClick       pdf_upload                  anchor=output
     END
 
