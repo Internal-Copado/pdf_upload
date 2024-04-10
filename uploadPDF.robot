@@ -13,4 +13,4 @@ Upload PDF
     Log To Console             ${CURDIR}
     GoTo                     https://smallpdf.com/share-document
     UploadFile               Choose file                 ${CURDIR}    dummy.pdf
-    Split String From Right                          /
+    Split String From Right            ${CURDIR}              /
