@@ -10,7 +10,5 @@ Suite Teardown                 Close All Browsers
 Upload PDF
     [Documentation]
     [Tags]
-    Log To Console             ${CURDIR}
     GoTo                     https://smallpdf.com/share-document
-    UploadFile               Choose file                 ${CURDIR}    dummy.pdf
-    Split String From Right            ${CURDIR}              /
+    UploadFile               Choose file                     dummy.pdf
