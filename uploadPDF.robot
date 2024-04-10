@@ -10,5 +10,5 @@ Upload PDF
     [Documentation]
     [Tags]
     GoTo               https://smallpdf.com/share-document
-    UploadFile         Choose file
+    UploadFile         Choose file    dummy.pdf
     
