@@ -14,7 +14,7 @@ UploadFile
         
     ELSE
         QVision.ClickText       execution
-        QVision.ClickText       ${TEST_NAME}
+        QVision.ClickText       ${SUITE_NAME}
     END
 
     QVision.DoubleClick     files                       anchor=resources
