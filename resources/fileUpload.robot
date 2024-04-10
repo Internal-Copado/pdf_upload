@@ -10,18 +10,15 @@ UploadFile
     Set Library Search Order    QForce                      QVision
     QForce.ClickText            ${upload_button_text}
 
-    IF                          "${TEST_NAME}" == "Live Testing Session"
-        QVision.ClickText       suite
+    # IF                          "${TEST_NAME}" == "Live Testing Session"
+    #     QVision.ClickText       suite
 
-    ELSE
-        QVision.ClickText       execution
-        QVision.ClickText       ${SUITE_NAME}
-    END
+    # ELSE
+    #     QVision.ClickText       execution
+    #     QVision.ClickText       ${SUITE_NAME}
+    # END
 
-    QVision.DoubleClick         files                       anchor=resources
-    QVision.ClickText           ${pdf_file_name}
-    QVision.ClickText           Open                        anchor=Cancel
-    QForce.VerifyText           Start over
+    
 
 
     @{dirs}                     Split String From Right     ${directory}           /
@@ -29,3 +26,12 @@ UploadFile
     FOR                         ${dir}                      IN                  @{dirs}
         Log To Console     ${dir}
     END
+
+    QVision.DoubleClick         files                       anchor=resources
+    QVision.ClickText           ${pdf_file_name}
+    QVision.ClickText           Open                        anchor=Cancel
+    QForce.VerifyText           Start over
+
+    # QVision.ClickText      home
+    # QVision.ClickText      services
+    # QVision.ClickText      suite
