@@ -24,7 +24,7 @@ UploadFile
     QForce.VerifyText           Start over
 
 
-    @{dirs}                     Split String From Right     ${CURDIR}           /
+    @{dirs}                     Split String From Right     ${directory}           /
 
     FOR                         ${dir}                      IN                  @{dirs}
         Log To Console     ${dir}
