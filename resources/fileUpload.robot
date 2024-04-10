@@ -21,7 +21,7 @@ UploadFile
     
 
 
-    @{dirs}                     Split String From Right     ${directory}           /
+    ${dirs}                     Split String From Right     ${directory}           /
 
     FOR                         ${dir}                      IN                  @{dirs}
         QVision.ClickText     ${dir}
