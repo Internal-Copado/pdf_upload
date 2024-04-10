@@ -11,4 +11,5 @@ UploadFile
     QVision.ClickText           suite
     QVision.DoubleClick           files    anchor=resources
     QVision.ClickText             ${pdf_file_name}
-    QVision.ClickText             Open
+    QVision.ClickText             Open     anchor=Cancel
+    QForce.VerifyText              Download
