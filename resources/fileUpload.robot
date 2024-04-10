@@ -24,7 +24,7 @@ UploadFile
     @{dirs}                     Split String From Right     ${directory}           /
 
     FOR                         ${dir}                      IN                  @{dirs}
-        Log To Console     ${dir}
+        QVision.ClickText     ${dir}
     END
 
     QVision.DoubleClick         files                       anchor=resources
