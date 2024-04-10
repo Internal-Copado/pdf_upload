@@ -15,7 +15,7 @@ UploadFile
     ELSE
         QVision.ClickText       execution
         Sleep                   2s
-        QVision.ClickText       pdf upload                  anchor=execution
+        QVision.ClickText       pdf upload                  anchor=output
     END
 
     QVision.DoubleClick         files                       anchor=resources
