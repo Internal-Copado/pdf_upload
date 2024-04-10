@@ -14,7 +14,7 @@ UploadFile
         QVision.ClickText       suite
     ELSE
         QVision.ClickText       execution
-        QVision.ClickText       pdf_upload
+        QVision.ClickText       pdf_upload                  anchor=execution
     END
 
     QVision.DoubleClick         files                       anchor=resources
